@@ -1,0 +1,137 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: sans-serif;
+}
+
+.header {
+    width: 100%;
+    height: 50px;
+    background-color: red;
+    color: white;
+    display: flex;
+    justify-content: end;
+}
+
+.header-items {
+    display: flex;
+    align-items: center;
+    padding-right: 80px;
+}
+.header-items * {
+    margin: 20px;
+    color: white;
+    text-decoration: none;
+}
+
+.content {
+    width: 100%;
+    min-height: 100vh;
+    background-color: blue;
+    background-image: url("image.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+}
+.content-center {
+    width: 60%;
+    height: 100%;
+    min-height: 100vh;
+    background-color: rgb(241, 241, 241);
+    display: flex;
+    flex-direction: row;
+}
+.account-summary {
+    width: 80%;
+    padding: 20px;
+}
+.account-info {
+    width: 20%;
+    background-color: rgb(62, 62, 62);
+    border: 1px solid rgb(167, 167, 167);
+}
+
+.account {
+    width: 95%;
+    height: 60px;
+    background-color: white;
+    border-radius: 2px;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+}
+.account-left {
+    height: 100%;
+    width: 70%;
+    padding-left: 15px;
+    border-left: 3px solid red;
+}
+.account-left * {
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+.account-center {
+    width: 30%;
+}
+.account-center * {
+    margin-right: 25px;
+}
+.account-right {
+    width: 10%;
+    height: 100%;
+    background-color: gray;
+    display: flex;
+    text-align: center;
+}
+.account-right * {
+    width: 100%;
+    color: white;
+}
+
+.account-bottom {
+    height: 30%;
+    width: 100%;
+    padding-left: 15px;
+}
+
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-toggle {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    height: 100%;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: white;
+    width: fit-content;
+    z-index: 100;
+    border: 1px solid black;
+}
+
+.dropdown-menu a {
+    display: block;
+    padding: 8px 12px;
+    text-decoration: none;
+    color: black;
+    width: 120px;
+    border: 1px solid rgba(128, 128, 128, 0.072);
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
